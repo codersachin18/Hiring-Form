@@ -1,0 +1,97 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,103,1) 46%, rgba(0,212,255,1) 91%);
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navs {
+    display: flex;
+  }
+  
+  .navs ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navs1 {
+    margin: 0 10px;
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .navs1:hover{
+    background-color: rgba(9, 201, 235, 0.178);
+    color: white;
+    padding-bottom: 12px;
+   
+
+  }
+  
+  .btn1 {
+    margin-left: 10px;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .navs {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navs.nav-visible {
+      display: flex;
+    }
+  
+    .navs ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navs1 {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .btn1 {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  .btn1{
+    font-size: medium;
+    background-color: black;
+    color: white;
+
+  }
